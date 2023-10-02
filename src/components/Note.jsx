@@ -1,15 +1,10 @@
 import React from "react";
 
-const Note = () => {
+const Note = (props) => {
   return (
     <div className="note">
-      <h1>This is the Note Title</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quam
-        obcaecati nihil repellat officia. Saepe iure iusto dolorum ex nesciunt
-        cupiditate assumenda, quam accusamus optio suscipit, laborum ratione,
-        culpa exercitationem.
-      </p>
+      <h1>{props.title}</h1>
+      <p>{props.content}</p>
     </div>
   );
 };
